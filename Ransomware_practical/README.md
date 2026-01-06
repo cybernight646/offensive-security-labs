@@ -1,47 +1,132 @@
-Requirements
+Ransomware & Decryptor (Red Team Research Project)
+Overview
+
+This repository contains two complementary Python scripts designed strictly for red team research, malware analysis, and defensive learning:
+
+Ransomware Simulation Script – demonstrates file encryption behavior using symmetric cryptography.
+
+Decryptor Utility – restores encrypted files after key recovery to validate incident‑response and recovery workflows.
+
+The project exists to help researchers and defenders understand how ransomware operates technically, how encryption impacts systems, and how recovery mechanisms function in controlled environments.
+
+This repository is intentionally maintained as private and is not intended for public distribution or real‑world deployment.
+
 Intended Use Environment
 
-This project is designed exclusively for red team research and defensive analysis.
+Execution is limited to controlled lab environments
 
-Execution must occur only within a controlled lab environment on systems that are owned by, or explicitly authorized for testing by, the researcher.
+Systems must be owned by or explicitly authorized for testing
 
-The code is not designed for production systems and must not be executed on personal or third‑party machines.
+Only non‑sensitive, test files should be used
+
+The code must never be executed on production or third‑party systems
 
 Operating System
 
-Microsoft Windows (required)
+Microsoft Windows only
 
-The code relies on Windows‑specific APIs and behaviors and is not portable to other platforms.
+The project relies on Windows‑specific filesystem behavior and APIs
+
+Project Components
+1. Ransomware Simulation Script
+Purpose
+
+The ransomware script demonstrates:
+
+Symmetric file encryption at scale
+
+Concurrent file processing behavior
+
+Ransom note creation and user notification
+
+Key‑handling separation from decryption logic
+
+This script is educational by design and prioritizes behavioral clarity over stealth or persistence.
+
+High‑Level Behavior
+
+Generates a Fernet symmetric encryption key
+
+Encrypts files matching predefined extensions
+
+Writes a ransom note to the filesystem
+
+Protects the symmetric key using asymmetric cryptography
+
+Leaves recovery intentionally dependent on key restoration
+
+The script does not:
+
+Exfiltrate data
+
+Communicate with command‑and‑control infrastructure
+
+Attempt lateral movement
+
+Perform evasion or obfuscation
+
+2. Decryptor Utility
+Purpose
+
+The decryptor is a standalone recovery tool used to demonstrate:
+
+Post‑incident file restoration
+
+Key‑based decryption workflows
+
+Separation of encryption and recovery logic
+
+Defensive validation and incident response simulation
+
+High‑Level Behavior
+
+Monitors for a file named PUT_ME_ON_DESKTOP.txt
+
+Reads a Fernet symmetric key from that file
+
+Decrypts previously encrypted files
+
+Processes files concurrently
+
+Terminates automatically after successful decryption
+
+The decryptor does not generate keys, modify the system state beyond file restoration, or communicate externally.
 
 Execution Scope
 
-File operations are scoped to a user‑defined test directory.
+File operations are scoped to a researcher‑defined test directory
 
-The script assumes the researcher will restrict execution to non‑sensitive sample data created for testing purposes.
+Only explicitly listed file extensions are processed
 
-System‑wide execution is explicitly out of scope for responsible use.
+System binaries and OS‑critical paths are out of scope
 
-Cryptographic Assumptions
+System‑wide execution is explicitly discouraged
 
-The project relies on a hybrid cryptographic design:
+Researchers are expected to restrict execution to sample data created for testing purposes.
 
-Symmetric encryption for file operations
+Cryptographic Design
 
-Asymmetric cryptography for key protection
+This project demonstrates a hybrid cryptographic model commonly observed in real‑world ransomware:
 
-An RSA public key is expected to be present in the execution directory at runtime.
+Symmetric encryption (Fernet) for file operations
 
-Private key handling, recovery workflows, and key escrow mechanisms are intentionally excluded from this repository.
+Asymmetric cryptography (RSA) for key protection
 
-Proper key generation, storage, and lifecycle management are assumed to follow standard cryptographic best practices in a research environment.
+Assumptions
 
-Python Runtime
+An RSA public key is expected to exist in the execution directory
 
-Python 3.x is required.
+Private key handling and recovery workflows are intentionally excluded
 
-Python Dependencies
+Proper key lifecycle management is assumed in a research environment
 
-The following third‑party libraries are required for the codebase to function as designed:
+No cryptographic hardening or evasion techniques are implemented.
+
+Python Runtime Requirements
+
+Python 3.x
+
+Required Dependencies
 
 cryptography
 
@@ -53,12 +138,35 @@ requests
 
 concurrent.futures (standard library)
 
-Environment setup and dependency management are assumed to be handled by the researcher.
+Dependency installation and environment isolation are assumed to be handled by the researcher.
 
 Design Constraints
 
-The code is intentionally not hardened, obfuscated, or production‑ready.
+The code is not production‑ready
 
-The implementation prioritizes behavioral clarity to support analysis, detection engineering, and defensive learning.
+No obfuscation or anti‑analysis techniques are used
 
-This repository is maintained as private by design and is not intended for redistribution.
+The implementation prioritizes:
+
+Readability
+
+Traceability
+
+Defensive understanding
+
+This is a learning and research artifact, not an operational tool.
+
+Ethical and Legal Disclaimer
+
+This project is provided strictly for educational, research, and defensive purposes.
+
+Any use outside of authorized lab environments is unethical and potentially illegal.
+The author assumes no responsibility for misuse or unauthorized execution.
+
+Repository Status
+
+Maintained as private
+
+Not intended for redistribution
+
+Shared only in controlled professional or academic contexts
