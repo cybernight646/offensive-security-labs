@@ -161,12 +161,14 @@ Ethical and Legal Disclaimer
 This project is provided strictly for educational, research, and defensive purposes.
 
 Any use outside of authorized lab environments is unethical and potentially illegal.
-The author assumes no responsibility for misuse or unauthorized execution.
-
+I assumes no responsibility for misuse or unauthorized execution.
 Repository Status
-
 Maintained as private
-
 Not intended for redistribution
-
 Shared only in controlled professional or academic contexts
+
+
+QUICK DEMO.
+we will select a particular folder to encrypt everything inside, From images,txt, etc.-- we will do that by changing this line
+
+
