@@ -167,7 +167,7 @@ we will select a particular folder to encrypt everything inside, From images,txt
 
 -Put or copy all types of files images,pdfs,text etc. into the folder
 
--change the folder path to this "self.sysRoot = os.path.join(os.path.expanduser('~'), 'Desktop', 'test_encryption')" NB: DO NOT USE "self.sysRoot = os.path.join(os.path.expanduser('~')"
+-change the folder path to thisself.sysRoot = os.path.join(os.path.expanduser("~"), "Desktop", "test_encryption")
 
 -Compile and run the application but the simplest way is to run it from your idle.I will be using sublime for now
 
