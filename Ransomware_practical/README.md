@@ -169,6 +169,15 @@ Shared only in controlled professional or academic contexts
 
 
 QUICK DEMO.
-we will select a particular folder to encrypt everything inside, From images,txt, etc.-- we will do that by changing this line
+we will select a particular folder to encrypt everything inside, From images,txt, 
+-Create a folder name "TEST_ENCRYPTION"  ON the Desktop
+-Put or copy all types of files images,pdfs,text etc. into the folder 
+-change the folder path to this --self.sysRoot = os.path.join(os.path.expanduser('~'), 'Desktop', 'test_encryption') NB: DO NOT USE self.sysRoot = os.path.join(os.path.expanduser('~')
+-Compile and run the application but the simplest way is to run it from your idle.I will be using sublime for now
+-After running check the folder to see that all files are encrypted.And also  your backgroung will change and there will be a note on the desktop.
+-Now we can decrypt the files by runing the decrypter.py .NB:The decryptor.py assumes there is put_me_on_desktop.txt(which contains the private AES key).It reads the key and uses it to decrypt the fernet key and decrypts the entire files.
+
+A QUICK DIAGRAM IS SHOWN BELOW.
+
 
 
