@@ -120,17 +120,12 @@ Your computer has been compromised by a sophisticated encryption algorithm.
 All your files have been locked, and only we possess the decryption key.
 
 To regain access to your valuable data, follow these instructions:
-
-1. Email the file named EMAIL_ME.txt on your desktop to zeroday1234@proton.me Failure to comply within 24 hours will result in permanent data loss.
-
-2. You will receive a unique Bitcoin address for payment. Payment must be made within 48 hours of receiving this message. Any delay will result in an increase in the ransom amount.
-
-3. After payment is confirmed, email zeroday1234@proton.me with the subject "PAID". We will verify payment and provide you with the decryption key.
+-Put the Me.txt on the desktop since the ransomware constantly checks on the desktop for the file
+-DO NOT WORRY THIS IS JUST A DEMO
 
 WARNING:
 - Attempts to decrypt files using unauthorized software will render them permanently inaccessible.
-- Any attempt to contact law enforcement or security agencies will result in immediate deletion of your files.
-- Non-compliance or failure to pay will result in irreversible data deletion. We have the means to destroy your files beyond recovery.
+-DO NOT PANIC THIS IS JUST A DEMO USE THE DECRYPTING.py TO DECRYPT THE FILE
 
 Act swiftly and follow instructions precisely to avoid irreparable harm to your data.
 ''')
