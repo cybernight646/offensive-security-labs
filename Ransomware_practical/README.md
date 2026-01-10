@@ -184,6 +184,9 @@ A QUICK DIAGRAM IS SHOWN BELOW.
 ![Image ALT](https://github.com/cybernight646/offensive-security-labs/blob/598b4eb7808d9efff0ce9bfd57aadd355d1ae2e3/Ransomware_practical/Screenshot%20(105).png)
 
 -BEFORE ENCRYPTION
+![Demo](https://github.com/cybernight646/offensive-security-labs/blob/94a0e6e8b9c75e90b20b0bf81799d381650a4b76/Ransomware_practical/Animation.gif)
+
+AFTER ENCRYPTION
 
 
 
