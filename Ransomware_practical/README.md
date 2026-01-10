@@ -181,7 +181,7 @@ A QUICK DIAGRAM IS SHOWN BELOW.
 -SO the public key(public.pem) has to be in the same folder as the ransomware script for the encryption to be successful.
 
 -THE encryption folder should look something like this .it should contain all types of files including executatbles .We will use this for just a demo.NB:In a target system it will encrypt on the files weve specified in the ransomware.py.
-![Image ALT]()
+![Image ALT](https://github.com/cybernight646/offensive-security-labs/blob/598b4eb7808d9efff0ce9bfd57aadd355d1ae2e3/Ransomware_practical/Screenshot%20(105).png)
 
 
 
