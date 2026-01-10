@@ -178,5 +178,8 @@ we will select a particular folder to encrypt everything inside, From images,txt
 A QUICK DIAGRAM IS SHOWN BELOW.
 ![Image ALT](https://github.com/cybernight646/offensive-security-labs/blob/d33d86ba8173221afbb21b36e6ef439809417f95/Ransomware_practical/Screenshot%20(104).png)
 
+-SO the public key(public.pem) has to be in the same folder as the ransomware script for the encryption to be successful.
+-
+
 
 
