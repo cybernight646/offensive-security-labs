@@ -176,7 +176,7 @@ we will select a particular folder to encrypt everything inside, From images,txt
 -Now we can decrypt the files by runing the decrypter.py .NB:The decryptor.py assumes there is put_me_on_desktop.txt(which contains the private AES key).It reads the key and uses it to decrypt the fernet key and decrypts the entire files.
 
 A QUICK DIAGRAM IS SHOWN BELOW.
-![Image ALT]()
+![Image ALT](https://github.com/cybernight646/offensive-security-labs/blob/d33d86ba8173221afbb21b36e6ef439809417f95/Ransomware_practical/Screenshot%20(104).png)
 
 
 
