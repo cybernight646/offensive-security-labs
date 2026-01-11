@@ -189,6 +189,14 @@ A QUICK DIAGRAM IS SHOWN BELOW.
 
 AFTER ENCRYPTION
 -RElize that there is a ransom note in the folder
+
 ![Demo ALT](https://github.com/cybernight646/offensive-security-labs/blob/8a0859191b67191a97825f08b40f141542ded3e7/Ransomware_practical/animation2.gif)
+
+
+IMPORTANT
+->There easiest way to practicaly see this in action is to remove the public key from the folder that the ransomware.py will read from.
+That way it will encrypt the files using the fernet key alone and the Fernet key will be unencrypted since theres no public key.
+
+->That way just uses the decrypter.py to read the fernet key and decrypt it easily .NB:the fernet key file should be name PUT_ME_ON_DESKTOP.txt or better still modify the code however you want.
 
 
