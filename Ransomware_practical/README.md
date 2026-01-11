@@ -188,6 +188,7 @@ A QUICK DIAGRAM IS SHOWN BELOW.
 ![Demo](https://github.com/cybernight646/offensive-security-labs/blob/94a0e6e8b9c75e90b20b0bf81799d381650a4b76/Ransomware_practical/Animation.gif)
 
 AFTER ENCRYPTION
-
+-RElize that there is a ransom note in the folder
+![Demo ALT](https://github.com/cybernight646/offensive-security-labs/blob/8a0859191b67191a97825f08b40f141542ded3e7/Ransomware_practical/animation2.gif)
 
 
