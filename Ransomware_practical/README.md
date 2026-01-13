@@ -1,5 +1,5 @@
-Ransomware & Decryptor (Red Team Research Project)
-Overview
+## Ransomware & Decryptor (Red Team Research Project)
+### Overview
 
 This repository contains two complementary Python scripts designed strictly for red team research, malware analysis, and defensive learning:
 
@@ -19,7 +19,7 @@ Systems must be owned by or explicitly authorized for testing
 
 Only non‑sensitive, test files should be used
 
-The code must never be executed on production or third‑party systems
+## The code must never be executed on production or third‑party systems
 
 Operating System
 
@@ -27,7 +27,7 @@ Microsoft Windows only
 
 The project relies on Windows‑specific filesystem behavior and APIs
 
-Project Components
+ ### Project Components
 1. Ransomware Simulation Script
 Purpose
 
@@ -43,7 +43,7 @@ Key‑handling separation from decryption logic
 
 This script is educational by design and prioritizes behavioral clarity over stealth or persistence.
 
-High‑Level Behavior
+## High‑Level Behavior
 
 Generates a Fernet symmetric encryption key
 Encrypts files matching predefined extensions
@@ -51,7 +51,7 @@ Writes a ransom note to the filesystem
 Protects the symmetric key using asymmetric cryptography
 Leaves recovery intentionally dependent on key restoration
 
-***The script does not***:
+## ***The script does not***:
 Exfiltrate data
 Communicate with command‑and‑control infrastructure
 Attempt lateral movement
@@ -104,7 +104,7 @@ Symmetric encryption (Fernet) for file operations
 
 Asymmetric cryptography (RSA) for key protection
 
-Assumptions
+### Assumptions
 
 An RSA public key is expected to exist in the execution directory
 
@@ -132,7 +132,7 @@ concurrent.futures (standard library)
 
 Dependency installation and environment isolation are assumed to be handled by the researcher.
 
-Design Constraints
+### Design Constraints
 
 The code is not production‑ready
 
@@ -144,7 +144,7 @@ Readability
 
 Traceability
 
-Defensive understanding
+## Defensive understanding
 
 This is a learning and research artifact, not an operational tool.
 
@@ -160,7 +160,7 @@ Not intended for redistribution
 Shared only in controlled professional or academic contexts
 
 
-QUICK DEMO.
+## QUICK DEMO.
 we will select a particular folder to encrypt everything inside, From images,txt,
 
 -Create a folder name "TEST_ENCRYPTION"  ON the Desktop
@@ -175,7 +175,7 @@ we will select a particular folder to encrypt everything inside, From images,txt
 
 -Now we can decrypt the files by runing the decrypter.py .NB:The decryptor.py assumes there is put_me_on_desktop.txt(which contains the private AES key).It reads the key and uses it to decrypt the fernet key and decrypts the entire files.
 
-A QUICK DIAGRAM IS SHOWN BELOW.
+### A QUICK DIAGRAM IS SHOWN BELOW.
 ![Image ALT](https://github.com/cybernight646/offensive-security-labs/blob/d33d86ba8173221afbb21b36e6ef439809417f95/Ransomware_practical/Screenshot%20(104).png)
 
 -SO the public key(public.pem) has to be in the same folder as the ransomware script for the encryption to be successful.
@@ -193,14 +193,14 @@ AFTER ENCRYPTION
 ![Demo ALT](https://github.com/cybernight646/offensive-security-labs/blob/8a0859191b67191a97825f08b40f141542ded3e7/Ransomware_practical/animation2.gif)
 
 
-IMPORTANT
+## IMPORTANT
 ->There easiest way to practicaly see this in action is to remove the public key from the folder that the ransomware.py will read from.
 That way it will encrypt the files using the fernet key alone and the Fernet key will be unencrypted since theres no public key.
 
 ->That way just uses the decrypter.py to read the fernet key and decrypt the files easily .NB:the fernet key file should be name PUT_ME_ON_DESKTOP.txt or better still modify the code however you want.
 
 
-Defender’s View and Detection Perspective
+## Defender’s View and Detection Perspective
 
 This script is designed to simulate a real-world ransomware attack surface in a controlled and educational manner. Its purpose is to demonstrate how ransomware typically operates once it has execution within a user environment, and what defenders can realistically observe, detect, and mitigate during such an event.
 
