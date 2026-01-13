@@ -1,4 +1,4 @@
-AMSI Memory Patching – Research Artifact
+## AMSI Memory Patching – Research Artifact
 Overview
 
 This project is a research artifact created to study how the Windows Antimalware Scan Interface (AMSI) operates internally and how in-memory tampering techniques can interfere with runtime security controls.
@@ -7,7 +7,7 @@ The primary goal is defensive understanding: to analyze attacker tradecraft so t
 
 This code is not intended for public distribution, real-world deployment, or use outside of controlled laboratory environments on systems that the researcher explicitly owns or is authorized to test.
 
-Purpose
+## Purpose
 
 To understand how AMSI integrates with user-mode processes such as PowerShell
 
@@ -17,7 +17,7 @@ To study behavioral indicators that modern EDR and endpoint protection solutions
 
 To support defensive research, detection engineering, and incident response training
 
-High-Level Behavior (Conceptual)
+### High-Level Behavior (Conceptual)
 
 At a conceptual level, this program:
 
@@ -45,7 +45,7 @@ Highly sensitive to OS version, AMSI updates, and endpoint security controls
 
 This technique is fragile by design and primarily useful for educational analysis.
 
-Defensive Relevance
+## Defensive Relevance
 
 From a defensive standpoint, this project highlights:
 
