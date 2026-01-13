@@ -1,10 +1,10 @@
-Overview
+## Overview
 
 This repository contains a research artifact designed to support red team simulation, malware analysis training, and defensive engineering education. The code demonstrates how certain post‑exploitation techniques may be combined within a single program so that defenders can better understand attack surface, telemetry, and detection opportunities.
 
 This project is maintained privately and is not intended for public distribution, reuse, or execution outside controlled laboratory environments.
 
-Research Objectives
+## Research Objectives
 
 The purpose of this codebase is to support learning and analysis in the following areas:
 
@@ -34,7 +34,7 @@ No effort has been made to harden, evade detection, or optimize performance.
 
 This code should be treated as a learning specimen, not a production‑quality system.
 
-Environmental Assumptions
+### Environmental Assumptions
 
 This research artifact assumes the following conditions, without providing setup instructions:
 
